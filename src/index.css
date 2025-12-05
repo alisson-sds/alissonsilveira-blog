@@ -8,3 +8,8 @@
 :root {
   background-color: #242424;
 }
+
+body {
+  padding-right: 220px;
+  padding-left: 220px;
+}
