@@ -1,5 +1,6 @@
 import { CiLinkedin, CiYoutube } from "react-icons/ci";
 import { FaGithub } from "react-icons/fa";
+import { BR, US } from 'country-flag-icons/react/3x2'
 import foto from './assets/foto.jpg';
 
 function App() {
@@ -28,12 +29,16 @@ function App() {
         </div>
         <div className="flex flex-col gap-2 border-2 border-red-500 w-full">
           <div className="flex justify-between">
-            <div>
-              <p className="">
+            <div className="w-full p-2">
+              <div className="flex gap-2">
+                <BR title="Brasil" className="w-10 border-2 border-gray-400" />
+                <US title="Estados Unidos" className="w-10" />
+              </div>
+              <p className="font-inter text-gray-300 select-none">
                 Sobre mim <br /> siofasdfuhasdifuo <br /> asduifhasidoufhsdaiuoh <br /> asduifhasidoufhsdaiuoh <br /> asduifhasidoufhsdaiuoh
               </p>
             </div>
-            <div className="flex flex-col text-gray-300 gap-2 select-none">
+            <div className="flex flex-col text-gray-300 gap-2 select-none p-2">
               <div className="flex gap-2 w-full">
                 <p className="text-6xl border border-gray-300 cursor-pointer">
                   Progress
@@ -69,11 +74,11 @@ function App() {
               LinkedIn
             </a>
             <a href="https://www.youtube.com/@Alisson-Sds" target="_blank" className='flex text-center justify-center gap-2 items-center border-2 p-2 font-inter'>
-              <CiYoutube  />
+              <CiYoutube />
               YouTube
             </a>
             <a href="https://github.com/alisson-sds" target="_blank" className='flex text-center justify-center gap-2 items-center border-2 p-2 font-inter'>
-              <FaGithub  />
+              <FaGithub />
               Github
             </a>
           </div>
